@@ -8,14 +8,14 @@ public class CheckingAccount extends BankAccount implements OnlineService {
 
     @Override
     public double calculateInterest() {
-        return getBalance() * 0.01;
+        return balance * 0.01;
     }
 
     @Override
-    public void transferFunds(double amount, String toAccountNumber) {
+    public void transferFunds(double amount, String toAccount) {
         if (amount > 0 && balance >= amount) {
             balance -= amount;
-            System.out.println("Transferred $" + amount + " to " + toAccountNumber);
+            System.out.println("Transferred " + amount + " to account " + toAccount);
         }
     }
 
@@ -23,8 +23,7 @@ public class CheckingAccount extends BankAccount implements OnlineService {
     public void payBills(double amount) {
         if (amount > 0 && balance >= amount) {
             balance -= amount;
-            System.out.println("Paid bill of $" + amount);
+            System.out.println("Paid bill of " + amount);
         }
     }
 }
-

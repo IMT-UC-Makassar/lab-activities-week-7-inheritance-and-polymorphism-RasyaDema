@@ -1,8 +1,8 @@
 package oop.lab;
 
 public abstract class BankAccount {
-    public String accountNumber;
-    public String accountHolder;
+    private String accountNumber;
+    private String accountHolder;
     protected double balance;
 
     public BankAccount(String accountNumber, String accountHolder, double balance) {

@@ -11,3 +11,4 @@ public class PlatinumCard extends CreditCard {
         return 0.12; // 12% annual interest rate for platinum
     }
 }
+

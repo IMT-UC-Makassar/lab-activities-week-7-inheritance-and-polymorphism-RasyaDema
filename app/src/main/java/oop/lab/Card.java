@@ -1,8 +1,8 @@
 package oop.lab;
 
 public class Card {
-    public String cardNumber;
-    public String cardHolder;
+    private String cardNumber;
+    private String cardHolder;
 
     public Card(String cardNumber, String cardHolder) {
         this.cardNumber = cardNumber;
