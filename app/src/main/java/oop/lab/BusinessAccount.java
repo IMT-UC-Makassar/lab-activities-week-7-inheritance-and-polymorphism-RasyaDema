@@ -9,7 +9,7 @@ public class BusinessAccount extends BankAccount implements LoanService {
 
     @Override
     public double calculateInterest() {
-        return getBalance() * 0.02; // 2% interest
+        return balance += balance *0.05;
     }
 
     @Override
