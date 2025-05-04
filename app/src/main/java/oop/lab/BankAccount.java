@@ -21,7 +21,7 @@ public abstract class BankAccount {
     public void withdraw(double amount) {
         if (amount > 0) {
             if (amount <= balance) {
-
+                balance -= amount;
             } else {
                 throw new IllegalArgumentException("Insufficient funds");
             }
