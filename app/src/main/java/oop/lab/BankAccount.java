@@ -1,5 +1,6 @@
 package oop.lab;
 
+@SuppressWarnings("unused")
 public abstract class BankAccount {
     private String accountNumber;
     private String accountHolder;
