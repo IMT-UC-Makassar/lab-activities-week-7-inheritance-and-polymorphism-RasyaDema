@@ -1,7 +1,6 @@
 package oop.lab;
 
 public class BusinessAccount extends BankAccount implements LoanService {
-    private String loanStatus = "No Loan";
 
     public BusinessAccount(String accountNumber, String accountHolder, double balance) {
         super(accountNumber, accountHolder, balance);
@@ -15,12 +14,12 @@ public class BusinessAccount extends BankAccount implements LoanService {
     @Override
     public void applyForLoan(double amount) {
         if (amount > 0) {
-            loanStatus = "Loan Applied: $" + amount;
+            System.out.println("Loan Applied: $ "+ amount);
         }
     }
 
     @Override
     public String checkLoanStatus() {
-        return loanStatus;
+        return "Pending";
     }
 }
